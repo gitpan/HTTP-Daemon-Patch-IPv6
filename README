@@ -1,0 +1,23 @@
+NAME
+    HTTP::Daemon::patch::ipv6 - Patch module for HTTP::Daemon
+
+VERSION
+    version 0.01
+
+SYNOPSIS
+     use HTTP::Daemon;
+     use HTTP::Daemon::patch::ipv6;
+
+DESCRIPTION
+    This module contains patch for HTTP::Daemon::url() for
+    https://rt.cpan.org/Ticket/Display.html?id=71395
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2012 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
