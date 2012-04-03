@@ -1,5 +1,10 @@
 Revision history for HTTP-Daemon-patch-ipv6
 
-0.01    2012-04-02
+0.02    2012-04-03
+
+        Workaround for PAUSE indexing failure.
+
+
+0.01    2012-04-03
 
         First release.
