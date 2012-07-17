@@ -4,12 +4,14 @@ use 5.010001;
 use strict;
 no warnings;
 
-use parent qw(Module::Patch);
+use Module::Patch 0.07 qw();
+use base qw(Module::Patch);
 
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 use IO::Socket qw(AF_INET INADDR_ANY INADDR_LOOPBACK inet_ntoa);
 my $p_url = sub {
+    my $ctx  = shift;
     my $orig = shift;
 
     my $self = shift;
@@ -33,13 +35,15 @@ my $p_url = sub {
 
 sub patch_data {
     return {
-        versions => {
-            '6.01' => {
-                subs => {
-                    url => $p_url,
-                },
+        v => 2,
+        patches => [
+            {
+                action => 'wrap',
+                mod_version => qr/^6\.0.+/,
+                sub_name => 'url',
+                code => $p_url,
             },
-        },
+        ],
     };
 }
 
@@ -56,11 +60,10 @@ HTTP::Daemon::patch::ipv6 - Patch module for HTTP::Daemon
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
- use HTTP::Daemon;
  use HTTP::Daemon::patch::ipv6;
 
 =head1 DESCRIPTION

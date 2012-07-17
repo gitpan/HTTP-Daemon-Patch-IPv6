@@ -17,14 +17,14 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "HTTP-Daemon-patch-ipv6",
-  "dist_version" => "0.02",
+  "dist_version" => "0.03",
   "license" => "perl",
   "module_name" => "HTTP::Daemon::patch::ipv6",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
     "HTTP::Daemon" => "6.01",
-    "Module::Patch" => 0,
+    "Module::Patch" => "0.09",
     "perl" => "5.010001"
   },
   "script_files" => []

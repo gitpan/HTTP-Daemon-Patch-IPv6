@@ -15,9 +15,9 @@ meta-spec:
 name: HTTP-Daemon-patch-ipv6
 requires:
   HTTP::Daemon: 6.01
-  Module::Patch: 0
+  Module::Patch: 0.09
   perl: 5.010001
 resources:
   homepage: http://search.cpan.org/dist/HTTP-Daemon-patch-ipv6/
   repository: http://github.com/sharyanto/perl-HTTP-Daemon-patch-ipv6
-version: 0.02
+version: 0.03
