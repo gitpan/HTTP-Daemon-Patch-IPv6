@@ -4,15 +4,15 @@ use 5.010001;
 use strict;
 no warnings;
 
-use Module::Patch 0.07 qw();
+use Module::Patch 0.10 qw();
 use base qw(Module::Patch);
 
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 use IO::Socket qw(AF_INET INADDR_ANY INADDR_LOOPBACK inet_ntoa);
 my $p_url = sub {
     my $ctx  = shift;
-    my $orig = shift;
+    my $orig = $ctx->{orig};
 
     my $self = shift;
     my $url = $self->_default_scheme . "://";
@@ -35,7 +35,7 @@ my $p_url = sub {
 
 sub patch_data {
     return {
-        v => 2,
+        v => 3,
         patches => [
             {
                 action => 'wrap',
@@ -60,7 +60,7 @@ HTTP::Daemon::patch::ipv6 - Patch module for HTTP::Daemon
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 

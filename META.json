@@ -27,7 +27,7 @@
       "runtime" : {
          "requires" : {
             "HTTP::Daemon" : "6.01",
-            "Module::Patch" : "0.09",
+            "Module::Patch" : "0.10",
             "perl" : "5.010001"
          }
       }
@@ -39,6 +39,6 @@
          "url" : "http://github.com/sharyanto/perl-HTTP-Daemon-patch-ipv6"
       }
    },
-   "version" : "0.03"
+   "version" : "0.04"
 }
 
