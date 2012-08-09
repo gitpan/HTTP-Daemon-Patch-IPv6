@@ -1,13 +1,13 @@
-package HTTP::Daemon::patch::ipv6;
+package HTTP::Daemon::Patch::IPv6;
 
 use 5.010001;
 use strict;
 no warnings;
 
-use Module::Patch 0.10 qw();
+use Module::Patch 0.12 qw();
 use base qw(Module::Patch);
 
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 use IO::Socket qw(AF_INET INADDR_ANY INADDR_LOOPBACK inet_ntoa);
 my $p_url = sub {
@@ -48,7 +48,7 @@ sub patch_data {
 }
 
 1;
-# ABSTRACT: Patch module for HTTP::Daemon
+# ABSTRACT: Avoid error when IO::Socket::INET6 is around
 
 
 __END__
@@ -56,15 +56,15 @@ __END__
 
 =head1 NAME
 
-HTTP::Daemon::patch::ipv6 - Patch module for HTTP::Daemon
+HTTP::Daemon::Patch::IPv6 - Avoid error when IO::Socket::INET6 is around
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 
- use HTTP::Daemon::patch::ipv6;
+ use HTTP::Daemon::Patch::IPv6;
 
 =head1 DESCRIPTION
 

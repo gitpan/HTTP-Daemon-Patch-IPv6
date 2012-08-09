@@ -1,4 +1,9 @@
-Revision history for HTTP-Daemon-patch-ipv6
+Revision history for HTTP-Daemon-Patch-IPv6
+
+0.05    2012-08-09 (SHARYANTO)
+
+        Rename module HTTP::Daemon::{patch::ipv6,Patch::IPv6}.
+
 
 0.04    2012-08-03 (SHARYANTO)
 

@@ -7,7 +7,7 @@ META.json
 META.yml
 README
 dist.ini
-lib/HTTP/Daemon/patch/ipv6.pm
+lib/HTTP/Daemon/Patch/IPv6.pm
 t/00-compile.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t

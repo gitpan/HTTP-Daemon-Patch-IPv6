@@ -12,14 +12,14 @@ my %module_build_args = (
   "configure_requires" => {
     "Module::Build" => "0.3601"
   },
-  "dist_abstract" => "Patch module for HTTP::Daemon",
+  "dist_abstract" => "Avoid error when IO::Socket::INET6 is around",
   "dist_author" => [
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
-  "dist_name" => "HTTP-Daemon-patch-ipv6",
-  "dist_version" => "0.04",
+  "dist_name" => "HTTP-Daemon-Patch-IPv6",
+  "dist_version" => "0.05",
   "license" => "perl",
-  "module_name" => "HTTP::Daemon::patch::ipv6",
+  "module_name" => "HTTP::Daemon::Patch::IPv6",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
