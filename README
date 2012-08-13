@@ -2,7 +2,7 @@ NAME
     HTTP::Daemon::Patch::IPv6 - Avoid error when IO::Socket::INET6 is around
 
 VERSION
-    version 0.05
+    version 0.06
 
 SYNOPSIS
      use HTTP::Daemon::Patch::IPv6;

@@ -4,7 +4,7 @@
       "Steven Haryanto <stevenharyanto@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640",
+   "generated_by" : "Dist::Zilla version 4.300015, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -27,7 +27,7 @@
       "runtime" : {
          "requires" : {
             "HTTP::Daemon" : "6.01",
-            "Module::Patch" : "0.10",
+            "Module::Patch" : "0.12",
             "perl" : "5.010001"
          }
       }
@@ -39,6 +39,6 @@
          "url" : "http://github.com/sharyanto/perl-HTTP-Daemon-Patch-IPv6"
       }
    },
-   "version" : "0.05"
+   "version" : "0.06"
 }
 

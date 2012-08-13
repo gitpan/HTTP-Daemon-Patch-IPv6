@@ -7,7 +7,7 @@ no warnings;
 use Module::Patch 0.12 qw();
 use base qw(Module::Patch);
 
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 use IO::Socket qw(AF_INET INADDR_ANY INADDR_LOOPBACK inet_ntoa);
 my $p_url = sub {
@@ -60,7 +60,7 @@ HTTP::Daemon::Patch::IPv6 - Avoid error when IO::Socket::INET6 is around
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 
